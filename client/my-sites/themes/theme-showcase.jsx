@@ -61,7 +61,7 @@ const ThemeShowcase = React.createClass( {
 
 	getInitialState() {
 		return {
-			page: 0,
+			page: 1,
 			showPreview: false,
 			previewingTheme: null,
 		};

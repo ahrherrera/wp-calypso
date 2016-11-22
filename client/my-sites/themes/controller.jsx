@@ -92,7 +92,7 @@ export function fetchThemeData( context, next, shouldUseCache = false ) {
 		search: context.query.s,
 		tier: context.params.tier,
 		filter: compact( [ context.params.filter, context.params.vertical ] ).join( ',' ),
-		page: 0,
+		page: 1,
 		number: PER_PAGE,
 	};
 	const cacheKey = context.path;
