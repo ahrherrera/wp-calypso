@@ -82,13 +82,13 @@ const ThemesSelection = React.createClass( {
 	},
 
 	recordSearchResultsClick( theme, resultsRank ) {
-		//const { queryParams, themesList } = this.props;
+		const { query, themes } = this.props;
 		analytics.tracks.recordEvent( 'calypso_themeshowcase_theme_click', {
-			//search_term: queryParams.search,
-			theme: theme,
+			search_term: query.search,
+			theme,
 			results_rank: resultsRank + 1,
-			//results: themesList,
-			//page_number: queryParams.page
+			results: themes,
+			page_number: query.page
 		} );
 	},
 
